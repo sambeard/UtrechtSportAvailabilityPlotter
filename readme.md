@@ -9,6 +9,12 @@ Create a copy of the `template.json` file and fill the required fields. You'll f
 Where the `obj_id` param is the value that needs to be taken.
 Dates are written in Year, Month, Day format (4, 2 and 2 digits respectively). Day of the week is denoted by the three letter abbreviation (in lower caps), like `mon` for thursday.
 
+You might need to install some packages. It's recommended to use a virtual env (for instance venv) or another tool. You'll find the requirement list in `requirements.txt` which can be installed like so:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Running
 Now that you have created a configuration you can run the project using the following command:
 
