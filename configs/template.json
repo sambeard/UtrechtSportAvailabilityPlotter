@@ -1,0 +1,6 @@
+{
+    "hall_ids": [],
+    "start_date": "2025-12-01",
+    "end_date": "2026-03-31",
+    "days_of_week": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+}
