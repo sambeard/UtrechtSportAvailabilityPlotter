@@ -112,7 +112,8 @@ def plot_week_overview(img_dir: Path, hall_name: str):
     dates_and_images_by_day = load_images_by_day(img_dir)
     l = len(dates_and_images_by_day)
     nd = len(list(dates_and_images_by_day.values())[0]["dates"])
-    fig, axes = plt.subplots((l //2 + 1), (2 if l >= 2 else 1), figsize=(15 if l >=2 else 8, 1 + ((nd+2)*.3) * (l //2 + 1)))
+    n_rows = (l + 1) // 2
+    fig, axes = plt.subplots(n_rows, (2 if l >= 2 else 1), figsize=(15 if l >=2 else 8, 1 + (nd+2)*.3 * n_rows))
     # normalize axes shape (handles rows == 1)
     if ( l >2 and (l %2) ==1):
         axes[-1,-1].remove()
